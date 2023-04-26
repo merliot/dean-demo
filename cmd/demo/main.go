@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"log"
 
 	"github.com/merliot/dean"
@@ -12,6 +13,9 @@ import (
 )
 
 func main() {
+	host := flag.String("host", "example.com", "Domain name of host")
+	flag.Parse()
+
 	demo := demo.New("demo01", "demo", "demo1").(*demo.Demo)
 
 	server := dean.NewServer(demo)
@@ -22,5 +26,5 @@ func main() {
 	demo.Register("demo-metro", metro.New)
 	demo.Register("demo-pyportal", pyportal.New)
 
-	log.Fatal(server.ServeTLS("demo.merliot.net"))
+	log.Fatal(server.ServeTLS(*host))
 }

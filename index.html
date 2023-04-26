@@ -1,0 +1,31 @@
+<html lang="en">
+
+	<head>
+		<meta name="viewport"
+		      content="width=device-width, initial-scale=1">
+
+		<title>Demo</title>
+
+		<link rel="stylesheet" type="text/css" href="css/demo.css">
+
+	</head>
+
+	<body>
+		
+		<div class="flex-row">
+			<div class="flex-column">
+				<iframe id="demo-pyportal"></iframe>
+				<iframe id="demo-metro"></iframe>
+			</div>
+			<div class="flex-column">
+				<iframe id="demo-connect"></iframe>
+				<iframe id="demo-matrix"></iframe>
+			</div>
+		</div>
+
+		<script src="js/demo.js"></script>
+		<script>Run("{{.WebSocket}}")</script>
+
+	</body>
+
+</html>

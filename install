@@ -1,0 +1,11 @@
+#!/bin/bash
+
+go install -C demo/cmd/demo/
+if [ $? -ne 0 ]; then
+	echo "Fix it!"
+	exit 1
+fi
+sudo setcap CAP_NET_BIND_SERVICE=+eip ~/go/bin/demo
+sudo systemctl restart demo
+sleep 1
+sudo systemctl status demo

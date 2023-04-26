@@ -1,0 +1,47 @@
+<html lang="en">
+
+	<head>
+		<meta name="viewport"
+		      content="width=device-width, initial-scale=1">
+
+		<title>Adafruit Metro M4 Express AirLift</title>
+
+		<link rel="stylesheet" type="text/css" href="css/demo.css">
+
+	</head>
+
+	<body>
+		
+		<div id="overlay">
+			<div id="offline">Offline</div>
+		</div>
+
+		<fieldset>
+			<legend>Adafruit Metro M4 Express AirLift</legend>
+			<fieldset>
+				<legend>System Info</legend>
+				<textarea id="system" readonly rows="3"></textarea>
+			</fieldset>
+			<fieldset>
+				<legend>Grove Wio E5 Lora (Tx)</legend>
+				<div class="buttons">
+					<button onclick="tx('TinyGo')">TinyGo</button>
+					<button onclick="tx('Is')">Is</button>
+					<button onclick="tx('Great!')">Great!</button>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>(Relay 1 + Relay 2) Input (Pin D2)</legend>
+				<center><img id="gopher"></img></center>
+			</fieldset>
+			<div class="buttons">
+				<button onclick="reset()">Reset</button>
+			</div>
+		</fieldset>
+
+		<script src="js/demo.js"></script>
+		<script>run("{{.WebSocket}}")</script>
+
+	</body>
+
+</html>

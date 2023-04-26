@@ -1,0 +1,43 @@
+<html lang="en">
+
+	<head>
+		<meta name="viewport"
+		      content="width=device-width, initial-scale=1">
+
+		<title>Adafruit Matrix Portal M4</title>
+
+		<link rel="stylesheet" type="text/css" href="css/demo.css">
+
+	</head>
+
+	<body>
+		
+		<div id="overlay">
+			<div id="offline">Offline</div>
+		</div>
+
+		<fieldset>
+			<legend>Adafruit Matrix Portal M4</legend>
+			<fieldset>
+				<legend>System Info</legend>
+				<textarea id="system" readonly rows="3"></textarea>
+			</fieldset>
+			<fieldset>
+				<legend>Grove Wio E5 Lora (Rx)</legend>
+				<textarea id="rx" readonly rows="1"></textarea>
+			</fieldset>
+			<fieldset>
+				<legend>Relay 2 (Pin A3)</legend>
+				<center><img id="relay" src="images/relay-off.svg" width=100px></img></center>
+			</fieldset>
+			<div class="buttons">
+				<button onclick="reset()">Reset</button>
+			</div>
+		</fieldset>
+
+		<script src="js/demo.js"></script>
+		<script>run("{{.WebSocket}}")</script>
+
+	</body>
+
+</html>

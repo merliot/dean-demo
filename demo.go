@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/merliot/dean"
-	"github.com/merliot/dean/hub"
+	"github.com/merliot/dean-lib/hub"
 )
 
 //go:embed css js index.html

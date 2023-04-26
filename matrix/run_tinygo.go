@@ -7,7 +7,7 @@ import (
 
 	"github.com/merliot/dean"
 	"github.com/merliot/dean/tinynet"
-	"github.com/merliot/dean/lora/lorae5"
+	"github.com/merliot/dean-lib/lora/lorae5"
 )
 
 type rxMsg struct {

@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/merliot/dean"
-	"github.com/merliot/dean/demo/pyportal"
+	"github.com/merliot/dean-demo/pyportal"
 )
 
 func main() {

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-go install -C demo/cmd/demo/
+go install -C cmd/demo/
 if [ $? -ne 0 ]; then
 	echo "Fix it!"
 	exit 1

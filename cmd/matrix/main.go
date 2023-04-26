@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/merliot/dean"
-	"github.com/merliot/dean/demo/matrix"
+	"github.com/merliot/dean-demo/matrix"
 )
 
 func main() {

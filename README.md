@@ -1,10 +1,12 @@
 # Dean Demo
 
-This is a demo of [Dean](https://github.com/merliot/dean), a Go framework for making things.  It's also a demo on TinyGo networking using netdev.
+This is a demo of [Dean](https://github.com/merliot/dean), a Go framework for making things.  It's also a demo of TinyGo networking using netdev.
+
+The demo runs on the hardware setup below, sitting on my desk.  (Bunch of parts I had on-hand; hopefully the cat doesn't find it interesting!).
 
 ![](images/desk_image.jpg)
 
-*Hardware setup*
+There are two parts to the demo: a hub running on a VM and the microcontrollers.  The hub is running [cmd/demo/main.go](cmd/demo/main.go).  The microcontrollers are running firmware built with TinyGo.
 
 ## Install Hub
 

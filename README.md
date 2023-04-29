@@ -1,11 +1,14 @@
 # Dean Demo
 
+This is a demo of [Dean](https://github.com/merliot/dean), a Go framework for making things.  It's also a demo on TinyGo networking using netdev.
+
 ![](images/desk_image.jpg)
+
 *Hardware setup*
 
 ## Install Hub
 
-The four microcontrollers connect to the hub.  The hub is a webserver and presents a view to the microcontrollers.
+The four microcontrollers connect to a hub.  The hub is a webserver and presents a view to the microcontrollers.
 
 I've installed the hub on a VM running on GCP with Ubuntu on the cheapest VM option ($5/month).
 
@@ -19,7 +22,7 @@ Give perms to web serve https on port :443
 sudo setcap CAP_NET_BIND_SERVICE=+eip ~/go/bin/demo
 ```
 
-## Run
+## Run Hub
 
 Run demo as https web server on \<host\> on port :443.
 

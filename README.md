@@ -24,6 +24,8 @@ The demo runs on the hardware setup below, sitting on my desk.  (Bunch of parts 
 
 ### Network
 
+Here's a network view of the demo.  The VM is a https server and the microcontrollers are http servers.  The microcontrollers connect to the hub over secure websockets.
+
 ![](images/network.jpg)
 
 # Running Demo

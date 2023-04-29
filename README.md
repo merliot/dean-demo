@@ -1,12 +1,19 @@
 # Dean Demo
 
-## Install
+![](images/desk_image.jpg)
+*Hardware setup*
+
+## Install Hub
+
+The four microcontrollers connect to the hub.  The hub is a webserver and presents a view to the microcontrollers.
+
+I've installed the hub on a VM running on GCP with Ubuntu on the cheapest VM option ($5/month).
 
 ```
 go install -C cmd/demo
 ```
 
-Give perms to serve on port :443
+Give perms to web serve https on port :443
 
 ```
 sudo setcap CAP_NET_BIND_SERVICE=+eip ~/go/bin/demo
@@ -20,9 +27,11 @@ Run demo as https web server on \<host\> on port :443.
 ~/go/bin/demo -host <host>
 ```
 
-## Building Firmware
+## Install MicroControllers
 
-Build the firmware for each target using TinyGo\*:
+### Building Firmware
+
+Buildi/flash the firmware for each target using TinyGo\*:
 
 ```
 tinygo flash -monitor -target pyportal -stack-size 4KB cmd/pyportal/main.go

@@ -20,7 +20,9 @@ The demo runs on the hardware setup below, sitting on my desk.  (Bunch of parts 
 
 ### Connections
 
-![](images/connections.jpg)
+Everything is wired together:
+
+![](images/system.jpg)
 
 ### Network
 

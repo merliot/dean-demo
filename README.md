@@ -18,6 +18,14 @@ The demo runs on the hardware setup below, sitting on my desk.  (Bunch of parts 
 * (2) 3v Relays
 * (2) [Grove Lora E5](https://www.seeedstudio.com/Grove-LoRa-E5-STM32WLE5JC-p-4867.html)
 
+### Connections
+
+![](images/connections.jpg)
+
+### Network
+
+![](images/network.jpg)
+
 # Running Demo
 
 There are two parts to the demo: a hub running on a VM and the microcontrollers.  The hub is running [cmd/demo/main.go](cmd/demo/main.go).  The microcontrollers are running firmware built with TinyGo.

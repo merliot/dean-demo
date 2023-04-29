@@ -14,43 +14,47 @@
 		<fieldset id="demo">
 			<legend>Demo</legend>
 			<p>
-				This is a demo of TinyGo networking and Dean.  This demo
-				is LIVE.
+				This is a demo of <a href="https://tinygo.org"
+						     target="_blank">TinyGo</a>
+				networking with netdev and <a
+					href="https://github.com/merliot/dean"
+					target="_blank">Dean</a>, my Go framework.
+				This demo is LIVE.  (Unless it's not, which means I have a bug to fix).
+				The source for the demo is <a
+					href="https://github.com/merliot/dean-demo"
+					target="_blank">here</a>.
 			</p>
 			<p>
 				On my <a
-				href="https://raw.githubusercontent.com/merliot/dean-demo/main/images/desk_image.jpg"
-				target="_blank">desk</a>, there are
-				four microcontrollers <a href=""
-				target="_blank">physically</a>
-				connected in interesting ways to make a simple
+					href="https://raw.githubusercontent.com/merliot/dean-demo/main/images/desk_image.jpg"
+					target="_blank">desk</a>, there are
+				four microcontrollers physically <a
+					href="https://raw.githubusercontent.com/merliot/dean-demo/main/images/system.jpg"
+					target="_blank">connected</a>
+				in interesting ways to make a simple
 				Rube Goldberg machine.  The goal is to
 				turn both relays ON.  Give it a try.
 			</p>
 			<p>
 				The network looks
 				like <a
-				href="https://raw.githubusercontent.com/merliot/dean-demo/main/images/network.jpg"
-				target="_blank">this</a>.
+					href="https://raw.githubusercontent.com/merliot/dean-demo/main/images/network.jpg"
+					target="_blank">this</a>.
 				Warning: all users see the same view,
 				so if things are changing, it probably
-				means someone else is poking around.
+				means someone else is poking around.  Also note
+				that the microcontrollers are sitting behind
+				Starlink, so the delays are due to latencies there.
 			</p>
 			<p>
 				The microcontrollers images are built with a
 				development version of TinyGo which includes
 				the netdev networking stack (PRs 
-				<a href="https://github.com/tinygo-org/tinygo/pull/3614" target="_blank">#3614</a>, 
-				<a href="https://github.com/tinygo-org/drivers/pull/537" target="_blank">#537</a>).
-			</p>
-			<p>
-				The source for the demo is <a
-					href="https://github.com/merliot/dean-demo"
-					target="_blank">here</a>.
-				This demo is built with <a
-					href="https://github.com/merliot/dean"
-					target="_blank">Dean</a>, my 100% Go
-				framework.
+					<a href="https://github.com/tinygo-org/tinygo/pull/3614" target="_blank">#3614</a>, 
+					<a href="https://github.com/tinygo-org/drivers/pull/537" target="_blank">#537</a>).
+				The Reset button is done with PR <a
+					href="https://github.com/tinygo-org/tinygo/pull/3595"
+					target="_blank">#3595</a>.
 			</p>
 		</fieldset>
 		

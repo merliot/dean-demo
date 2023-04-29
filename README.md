@@ -1,6 +1,6 @@
 # Dean Demo
 
-[The demo is running [here](https://demo.merliot.net)]
+[The demo is [running](https://demo.merliot.net) LIVE]
 
 This is a demo of [Dean](https://github.com/merliot/dean), a Go framework for making things.  It's also a demo of [TinyGo](https://tinygo.org") networking using netdev.
 
@@ -31,6 +31,8 @@ Here's a network view of the demo.  The VM is a https server and the microcontro
 ![](images/network.jpg)
 
 # Running Demo
+
+(These are notes to myself, mostly)
 
 There are two parts to the demo: a hub running on a VM and the microcontrollers.  The hub is running [cmd/demo/main.go](cmd/demo/main.go).  The microcontrollers are running firmware built with TinyGo.
 

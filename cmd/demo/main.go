@@ -13,7 +13,7 @@ import (
 )
 
 func main() {
-	host := flag.String("host", "example.com", "Domain name of host")
+	host := flag.String("host", "demo.merliot.net", "Domain name of host")
 	flag.Parse()
 
 	demo := demo.New("demo01", "demo", "demo1").(*demo.Demo)

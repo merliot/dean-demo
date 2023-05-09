@@ -24,16 +24,6 @@ func (w *Wio) Run(i *dean.Injector) {
 	i.Inject(msg.Marshal(w))
 
 	for {
-		changed := false
-
-		select {
-		case <-ticker.C:
-		}
-
-		if changed {
-			changed = false
-			w.Path = "update"
-			i.Inject(msg.Marshal(w))
-		}
+		select {}
 	}
 }

@@ -1,5 +1,7 @@
 # Dean Demo
 
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/merliot/dean-demo&branch=main&name=demo)
+
 [The demo is [running](https://demo.merliot.net) LIVE]
 
 This is a demo of [Dean](https://github.com/merliot/dean), a Go framework for making things.  It's also a demo of [TinyGo](https://tinygo.org") networking using netdev.

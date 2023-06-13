@@ -23,7 +23,7 @@ func main() {
 
 	server := dean.NewServer(demo)
 	server.MaxSockets(100)
-	server.Addr = ":8080"
+	server.Addr = ":8000"
 
 	demo.Register("demo-connect", connect.New)
 	demo.Register("demo-matrix", matrix.New)

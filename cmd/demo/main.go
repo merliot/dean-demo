@@ -20,7 +20,7 @@ func main() {
 	server := dean.NewServer(demo)
 	server.MaxSockets(100)
 	server.Addr = ":8000"
-	if val, ok := os.LookupEnv("PORT") {
+	if val, ok := os.LookupEnv("PORT"); ok {
 		server.Addr = val
 	}
 

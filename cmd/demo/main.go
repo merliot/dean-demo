@@ -1,8 +1,8 @@
 package main
 
 import (
-	//"flag"
 	"log"
+	"os"
 
 	"github.com/merliot/dean"
 	"github.com/merliot/dean-demo"
@@ -14,16 +14,15 @@ import (
 )
 
 func main() {
-	/*
-	host := flag.String("host", "demo.merliot.net", "Domain name of host")
-	flag.Parse()
-	*/
-	
+
 	demo := demo.New("demo01", "demo", "demo1").(*demo.Demo)
 
 	server := dean.NewServer(demo)
 	server.MaxSockets(100)
 	server.Addr = ":8000"
+	if val, ok := os.LookupEnv("PORT") {
+		server.Addr = val
+	}
 
 	demo.Register("demo-connect", connect.New)
 	demo.Register("demo-matrix", matrix.New)

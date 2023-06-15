@@ -21,7 +21,7 @@ func main() {
 	server.MaxSockets(100)
 	server.Addr = ":8000"
 	if val, ok := os.LookupEnv("PORT"); ok {
-		server.Addr = val
+		server.Addr = ":" + val
 	}
 
 	demo.Register("demo-connect", connect.New)

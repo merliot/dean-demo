@@ -25,11 +25,8 @@ func main() {
 		server.Addr = ":" + port
 	}
 
-	println("here")
 	if user, ok := os.LookupEnv("USER"); ok {
-		println("got USER", user)
 		if passwd, ok := os.LookupEnv("PASSWD"); ok {
-			println("got PASSWD", passwd)
 			server.BasicAuth(user, passwd)
 		}
 	}

@@ -19,9 +19,16 @@ func main() {
 
 	server := dean.NewServer(demo)
 	server.MaxSockets(100)
+
 	server.Addr = ":8000"
-	if val, ok := os.LookupEnv("PORT"); ok {
-		server.Addr = ":" + val
+	if port, ok := os.LookupEnv("PORT"); ok {
+		server.Addr = ":" + port
+	}
+
+	if user, ok := os.LookupEnv("USER"); ok {
+		if passwd, ok := os.LookupEnv("PASSWD"); ok {
+			server.BasicAuth(user, passwd)
+		}
 	}
 
 	demo.Register("demo-connect", connect.New)

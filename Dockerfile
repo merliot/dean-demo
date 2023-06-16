@@ -9,7 +9,7 @@ RUN go mod download
 
 COPY * ./
 
-RUN CGO_ENABLED=0 GOOS=linux go build -o /demo
+RUN CGO_ENABLED=0 GOOS=linux go build -o demo ./cmd/demo
 
 EXPOSE 7000
 
